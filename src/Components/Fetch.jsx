@@ -26,6 +26,7 @@ const Fetch = () => {
             
     return(
         <>
+        {/* Kolom Pencarian */}
         <div className="container my-4 py-3 sticky-top" style={{ backgroundColor: '#E9FFEE' }}>
             <div className="row">
                 <div className="input-group">
@@ -35,6 +36,7 @@ const Fetch = () => {
             </div>
         </div>
 
+        {/* Tampilan berita dalam bentuk kumpulan card */}
         <div className="container mt-5">
             <div className="row gx-4 gy-5">
 
