@@ -6,7 +6,9 @@ const NewsCard = (props) => {
     <div className="container mt-5">
       <div className="row gx-4 gy-5">
         {/* Conditional untuk menampilkan animasi loading atau card berdasarkan nilai state loading */}
-        {props.loading ? (
+        {props.isLoading ? (
+          <LoadingScreen />
+        ) : (
           props.dataNews.map((item, index) => {
             return (
               <div
@@ -34,8 +36,6 @@ const NewsCard = (props) => {
               </div>
             );
           })
-        ) : (
-          <LoadingScreen />
         )}
       </div>
     </div>
